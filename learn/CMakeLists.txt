@@ -6,16 +6,16 @@ project(learn)
 
 #
 set(CMAKE_CXX_STANDARD 11)
-set(EXECUTABLE_OUTPUT_PATH  ${PROJECT_BINARY_DIR}}/bin)
+set(EXECUTABLE_OUTPUT_PATH  ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH  ${PROJECT_BINARY_DIR}/lib)
 set(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -g -Wall")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall")
 
 # 头文件目录
-include_directories(${PROJECT_SOURCE_DIR} ${PROJECT_SOURCE_DIR}/cpprimer)
+include_directories(${PROJECT_SOURCE_DIR} /usr/local/include ${PROJECT_SOURCE_DIR}/cpprimer)
 
 # 库文件目录
-#link_directories()
+link_directories(/usr/local/lib /usr/local/Cellar/glew/2.0.0/lib /usr/local/Cellar/mysql-connector-c++/1.1.8/lib)
 
 # 包含源码的子目录
 add_subdirectory(${PROJECT_SOURCE_DIR}/cpprimer)
@@ -27,5 +27,5 @@ aux_source_directory(./ DIR_SRCS)
 add_executable(learn ${DIR_SRCS})
 
 # 链接库
-target_link_libraries(learn primer)
+target_link_libraries(learn primer GLEW.2.0 glfw3 mysqlcppconn)
 
