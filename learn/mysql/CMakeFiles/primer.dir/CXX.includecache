@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/wdc/dev/cpp/learn/cpprimer/Chapter02.cpp
+iostream
+-
+Chapter02.h
+/Volumes/wdc/dev/cpp/learn/cpprimer/Chapter02.h
+
+/Volumes/wdc/dev/cpp/learn/cpprimer/Chapter02.h
+

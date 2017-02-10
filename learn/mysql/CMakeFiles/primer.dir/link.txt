@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc ../cmake-build-debug/lib/libprimer.a  CMakeFiles/primer.dir/Chapter02.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib ../cmake-build-debug/lib/libprimer.a
