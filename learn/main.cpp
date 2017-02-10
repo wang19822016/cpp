@@ -1,12 +1,12 @@
 #include <iostream>
 
-#include "HelloWindow.h"
+#include "AsioBase.h"
 
 
 int main()
 {
 
-    HelloWindow hw;
-    hw.show();
+    AsioBase a;
+    a.server();
     return 0;
 }
